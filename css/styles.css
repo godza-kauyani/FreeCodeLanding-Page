@@ -1,34 +1,32 @@
 body
 {
   font-size: 12pt;
-  display:grid;
+  display:flex;
   height:100%;
-  grid-template:
-  	"header "
-	"about"
-	"price"
-	"order"
+  flex-direction:column;
 }
 #header{
   grid-area:header;
+  z-index:999;
 }
 #header-img{
- width:100px;
- height:100px;
-}
-#about{
-  grid-area:about;
+  width:inherit;
+  height:inherit;
+  background-color:inherit;
 }
 #card{
-  display:grid;
-  grid-template-column:2fr;
+  display:flex;
+  flex-direction:column;
+  
 }
 #price{
   grid-area:price;
 }
 #order{
   grid-area:order;
-  display:flex;
+  
+  
+  
 }
 #nav-bar{
   position:fixed;
@@ -37,5 +35,11 @@ body
   
 }
 @media(min-width:1025px){
-  
+  body{
+	font-size:1.5em;
+	font-family:sans-serif;
+  }
+  #card{
+  flex-direction:row;
+  }
 }
