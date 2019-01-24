@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<title>Godza Galaxy Online Store</title>
     <link href="css/styles.css" rel="stylesheet">
+	 <link href="css/materialize.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-
-    <h1>My Website</h1>
-
-    <p>This is my first website</p>
-
-  </body>
+	<header id="header">
+	  <nav id="nav-bar" >
+		<div class="nav-wrapper">
+		  <ul   class=" right">
+		  <li >
+			<a href="#about" class="nav-link">About</a>
+		  </li>
+		  <li >
+			<a href="#price" class="nav-link">Price</a>
+		  </li>
+		  <li >
+			<a href="#order" class="nav-link">Order</a>
+		  </li>
+		</ul>
+		<img id="header-img" src="/assets/s9.png" class=" brand-logo left">
+		
+		</div>
+	  </nav>
+	</header>
+	<main>
+	  <section id="about">
+		<p><strong>We</strong> are your best place online for SUMSUNG Galaxy price
+			on the web for the zimbabwean market.We offer 24 hour delivery anywhere 
+		  in the Country</p>
+		  <p>Our pricing is the lowest in the country and we offer the best quality 
+			after sale services including free repair for the first month.
+			<br/>
+			  <div>
+				<div class="card">
+		  <video id="video" src="/assets/galaxy.mp4"></video>
+				</div>
+		  </div>
+	  </section>
+	  <section id="price">
+		<header>Pricing</header>
+		<div class="card ">
+		  <p class="card-title">Sumsung Galaxy A9</p>
+		  <div class="card-image">
+		<img src="/assets/banner_galaxy-a9.png">
+		  </div>
+		</div>
+		<div class="card ">
+		  <p class="card-title">Sumsung Galaxy  Note 9</p>
+		  <div class="card-image">
+		<img src="/assets/banner_galaxy-note9.png">
+		  </div>
+		</div>
+	  </section>
+	  <section id="order">
+		<form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+		<input type="email" id="email" placeholder="Enter Email" name="email">
+		<input type="submit" value="Submit" id="submit">
+	  </form>
+	  </section>
+	</main>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  
+	</body>
 </html>		

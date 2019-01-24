@@ -1,4 +1,41 @@
 body
 {
-  font-size: 40pt;
+  font-size: 12pt;
+  display:grid;
+  height:100%;
+  grid-template:
+  	"header "
+	"about"
+	"price"
+	"order"
+}
+#header{
+  grid-area:header;
+}
+#header-img{
+ width:100px;
+ height:100px;
+}
+#about{
+  grid-area:about;
+}
+#card{
+  display:grid;
+  grid-template-column:2fr;
+}
+#price{
+  grid-area:price;
+}
+#order{
+  grid-area:order;
+  display:flex;
+}
+#nav-bar{
+  position:fixed;
+  display:grid;
+  
+  
+}
+@media(min-width:1025px){
+  
 }
